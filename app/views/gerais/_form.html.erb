@@ -1,0 +1,52 @@
+<%= form_for(geral) do |f| %>
+  <% if geral.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(geral.errors.count, "error") %> prohibited this geral from being saved:</h2>
+
+      <ul>
+      <% geral.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nome %>
+    <%= f.text_field :nome %>
+  </div>
+
+  <div class="field">
+    <%= f.label :descricao %>
+    <%= f.text_field :descricao %>
+  </div>
+
+  <div class="field">
+    <%= f.label :classificacao %>
+    <%= f.number_field :classificacao %>
+  </div>
+
+  <div class="field">
+    <%= f.label :serviceable_id %>
+    <%= f.text_field :serviceable_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :preco %>
+    <%= f.text_field :preco %>
+  </div>
+
+  <div class="field">
+    <%= f.label :estado %>
+    <%= f.number_field :estado %>
+  </div>
+
+  <div class="field">
+    <%= f.label :loja %>
+    <%= f.number_field :loja %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

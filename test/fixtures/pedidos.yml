@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  estado: 1
+  quantidade: 1
+  desconto: 9.99
+  preco_unitario: 9.99
+  preco_total: 9.99
+  tipo: 1
+  usuario_id: 1
+  geral_id: 1
+  carrinho_id: 1
+
+two:
+  estado: 1
+  quantidade: 1
+  desconto: 9.99
+  preco_unitario: 9.99
+  preco_total: 9.99
+  tipo: 1
+  usuario_id: 1
+  geral_id: 1
+  carrinho_id: 1

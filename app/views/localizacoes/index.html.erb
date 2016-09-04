@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Localizacoes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Latitude</th>
+      <th>Latitude</th>
+      <th>City</th>
+      <th>Address</th>
+      <th>State</th>
+      <th>State code</th>
+      <th>Postal code</th>
+      <th>Country</th>
+      <th>Country code</th>
+      <th>Tipo</th>
+      <th>Endereco</th>
+      <th>Street</th>
+      <th>Locationable</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @localizacoes.each do |localizacao| %>
+      <tr>
+        <td><%= localizacao.latitude %></td>
+        <td><%= localizacao.Latitude %></td>
+        <td><%= localizacao.city %></td>
+        <td><%= localizacao.address %></td>
+        <td><%= localizacao.state %></td>
+        <td><%= localizacao.state_code %></td>
+        <td><%= localizacao.postal_code %></td>
+        <td><%= localizacao.country %></td>
+        <td><%= localizacao.country_code %></td>
+        <td><%= localizacao.tipo %></td>
+        <td><%= localizacao.endereco %></td>
+        <td><%= localizacao.street %></td>
+        <td><%= localizacao.locationable %></td>
+        <td><%= link_to 'Show', localizacao %></td>
+        <td><%= link_to 'Edit', edit_localizacao_path(localizacao) %></td>
+        <td><%= link_to 'Destroy', localizacao, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Localizacao', new_localizacao_path %>

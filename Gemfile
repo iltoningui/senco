@@ -27,6 +27,17 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+gem 'material_design_lite-sass'
+gem 'gmaps4rails'
+gem 'material_icons'
+gem 'geocoder'
+gem 'devise'
+gem 'cancancan'
+gem 'carrierwave'
+gem 'cocoon'
+gem 'kaminari'
+gem 'jquery-turbolinks'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

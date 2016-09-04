@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @geral.nome %>
+</p>
+
+<p>
+  <strong>Descricao:</strong>
+  <%= @geral.descricao %>
+</p>
+
+<p>
+  <strong>Classificacao:</strong>
+  <%= @geral.classificacao %>
+</p>
+
+<p>
+  <strong>Serviceable:</strong>
+  <%= @geral.serviceable %>
+</p>
+
+<p>
+  <strong>Preco:</strong>
+  <%= @geral.preco %>
+</p>
+
+<p>
+  <strong>Estado:</strong>
+  <%= @geral.estado %>
+</p>
+
+<p>
+  <strong>Loja:</strong>
+  <%= @geral.loja %>
+</p>
+
+<%= link_to 'Edit', edit_geral_path(@geral) %> |
+<%= link_to 'Back', gerais_path %>

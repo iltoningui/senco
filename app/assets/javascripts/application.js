@@ -12,5 +12,12 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require underscore
+//= require gmaps/google
 //= require turbolinks
+//= require material
 //= require_tree .
+
+document.addEventListener('turbolinks:load', function() {
+  componentHandler.upgradeDom();
+});
