@@ -1,5 +1,5 @@
 
-<% @fab == %>
+
 <%if @fab == "adicionar"%>
   <div class="fixed-action-btn click-to-toggle" style="bottom: 45px; right: 24px;">
     <%= link_to add_to_cart_path(@geral), method: :patch, class:"btn-floating btn-large blue" do %>
@@ -7,23 +7,8 @@
     <%end%>
   </div>
 <%else%>
-  <div class="fixed-action-btn click-to-toggle" style="bottom: 45px; right: 24px;">
-    <a href="#" class="btn-floating btn-large blue" data-turbolinks="false">
-      <i class="large material-icons">menu</i>
-    </a>
-    <ul>
-      <li>
-      <%= link_to localizacoes_url, class:"btn-floating blue" do %>
-        <i class="material-icons">map</i>
-      <%end%>
-      </li>
-      <li>
-        <%= link_to lojas_url, class:"btn-floating blue" do %>
-          <i class="material-icons blue">store_mall_directory</i>
-        <%end%>
-      </li>
-      <li><a href="#" class="btn-floating yellow"><i class="material-icons">favorite_border</i></a></li>
-      <li><a href="#" class="btn-floating violet"><i class="material-icons">dashboard</i></a></li>
-    </ul>
-  </div>
+<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+  <i class="material-icons">add</i>
+</button>
+  
 <%end%>
